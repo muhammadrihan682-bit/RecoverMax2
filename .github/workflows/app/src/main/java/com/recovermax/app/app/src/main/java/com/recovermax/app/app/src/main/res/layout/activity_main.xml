@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/background">
+<!--  Header  -->
+<androidx.appcompat.widget.Toolbar android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/primary" app:title="RecoverMax" app:titleTextColor="@android:color/white"/>
+<!--  Status and Controls  -->
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@color/primary_light">
+<TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ready to scan" android:textColor="@android:color/white" android:textSize="16sp" android:layout_marginBottom="8dp"/>
+<ProgressBar android:id="@+id/progressBar" android:layout_width="match_parent" android:layout_height="4dp" style="?android:attr/progressBarStyleHorizontal" android:progress="0" android:layout_marginBottom="12dp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:spacing="8dp">
+<Button android:id="@+id/scanButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Start Scan" android:backgroundTint="@color/accent" android:textColor="@android:color/white" android:padding="12dp"/>
+<Button android:id="@+id/clearButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Clear" android:backgroundTint="@color/error" android:textColor="@android:color/white" android:padding="12dp"/>
+</LinearLayout>
+</LinearLayout>
+<!--  RecyclerView for media display  -->
+<androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="8dp" android:clipToPadding="false"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+<string name="app_name">RecoverMax</string>
+<string name="scan_button">Start Scan</string>
+<string name="clear_button">Clear</string>
+<string name="ready_to_scan">Ready to scan</string>
+<string name="scanning">Scanning storage...</string>
+<string name="found_files">Found %d files</string>
+<string name="storage_permission_required">Storage permission required!</string>
+<string name="error_file_not_found">File not found!</string>
+<string name="recovered_success">Recovered: %s</string>
+<string name="error_recovery">Error: %s</string>
+</resources>
